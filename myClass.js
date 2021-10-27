@@ -1,4 +1,4 @@
-class myClass{  
+class myClass{
  constructor() {
   this.pos = createVector (width/2,height/2);
   this.vel = createVector (0,0);
@@ -7,7 +7,7 @@ class myClass{
 }
   addForce(aForce) {
   this.acc.add(aForce);
-    
+
   }
  update() {
   this.checkedges () ;
@@ -15,22 +15,27 @@ class myClass{
   this.pos.add(this.vel);
 
   this.acc.set(0, 0);
-   
+
 
 }
  show() {
-    noStroke(); 
-    fill(147,227,230); 
+    noStroke();
+    fill(147,227,230);
     ellipse(this.pos.x, this.pos.y, this.w, this.w);
 //     fill (this.pos.x/2, this.pos.y/2,this.pos.x/4); //(230,142,86);
 //     ellipse(mouseX, mouseY, this.w-20, this.w-20);
- 
+
    if (mouseIsPressed) {
     this.w = this.w + 10;
     fill (255,0,0); //(230,142,86);
     rectMode (CENTER);
     rect(mouseX, mouseY, 40);
-   
+
+    textSize (50);
+    textAlign(CENTER);
+    fill(255,0,0);
+    text ('WARNING!',mouseX,mouseY-80);
+
    } else {
     this.w = 50;
     fill (this.pos.x/2, this.pos.y/2,this.pos.x/4); //(230,142,86);
@@ -55,5 +60,5 @@ class myClass{
       this.pos.x = 0;
   }
  }
-  
+
 }
