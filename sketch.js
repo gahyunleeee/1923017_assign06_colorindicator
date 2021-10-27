@@ -23,7 +23,8 @@ function draw() {
   // let print01 = print ('color code is '+int(myvector.pos.x/2)+', ' +      int(myvector.pos.y/2) + ', ' + int(myvector.pos.x/4));
   textSize (20);
   fill(0);
-  text ('color code is ' + int(myvector.pos.x/2)+', ' + int(myvector.pos.y/2) + ', ' + int(myvector.pos.x/4),20,30);
+  textAlign(CENTER);
+  text ('color code is ' + int(myvector.pos.x/2)+', ' + int(myvector.pos.y/2) + ', ' + int(myvector.pos.x/4),145,30);
 
   stroke(5);
   strokeCap(SQUARE);
