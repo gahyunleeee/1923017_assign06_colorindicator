@@ -9,7 +9,7 @@ function setup() {
 }
 
 function draw() {
-  background(230,195,204,70);
+  background(230,195,204,40);
   gravity01 = createVector(gravityx, gravityy);
   myvector.addForce(gravity01);
 
