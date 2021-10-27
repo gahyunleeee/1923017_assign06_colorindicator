@@ -53,5 +53,16 @@ function keyPressed () {
     gravityy = 0.1;
   }
 
+  if(keyCode === 78) { //'n' new background
+      let red01 = random(0,255);
+      let green01 = random(0,255);
+      let blue01 = random(0,255);
+     background(red01,green01,blue01);
+
+    }
+    if(keyCode === 82) { //'r' reset
+       background(230,195,204);
+     }
+
 
 }
